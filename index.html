@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color:hsl(217, 54%, 11%);
+    }
+    div.container {
+      xpadding-top:100px;
+      overflow: hidden;
+      width: 400px;
+      height:600px;
+      margin:auto;
+      background-color: hsl(216, 50%, 16%);
+      text-align: center;
+      border-radius: 10px;
+      font-family: 'Outfit', sans-serif;
+    }
+    div.content-container {
+      xpadding-top: 100px;
+      position: relative;
+      width: 340px ;
+      margin-top: 25px;
+      margin-right:auto;
+      margin-left: auto;
+      xbackground-color: #fff;
+      
+    }
+    img.cube {
+      border-radius: 10px;
+      width: 340px;
+      height: 340px;
+      border-radius: 10px;
+      
+    }
+    img.cube:hover + div.hover-show {
+      display:block;
+    }
+    div.content-container div.hover-show {
+      position: absolute;
+      display: none;
+      background-color: hsl(178, 100%, 50%);
+      opacity: 0.5;
+      border-radius: 10px;
+      width: 340px;
+      height:340px;
+      top:0px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 0;
+      line-height: 340px;
+    }
+    div.content-container div.hover-show img.eye{
+      
+        vertical-align: middle;
+        text-align: center;
+    }
+    p {
+      color: aliceblue;
+      
+    }
+    div.content-container .title {
+      font-weight: 600;
+      margin-left: 0;
+      text-align: left;
+    }
+    div.content-container .title:hover {
+      color: hsl(178, 100%, 50%);
+    }
+    
+    div.content-container .description {
+
+      color:hsl(215, 51%, 70%);
+      margin-left: 0;
+      text-align: left;
+      
+    }
+    div.flex {
+      display:flex;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    div.flex .left {
+      margin-right: auto;
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+      
+    }
+    div.flex .right {
+      color:hsl(215, 51%, 70%);
+    }
+    div.flex .left::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-image: url(images/icon-ethereum.svg);
+    }
+    div.flex .right::before{
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      padding-right: 5px;
+      vertical-align: bottom;
+      background-repeat: no-repeat;
+      background-image: url(images/icon-clock.svg);
+    }
+    
+    hr {
+      width:300px;
+    }
+    div.end {
+      line-height: 30px;
+    }
+    div.end img.avatar {
+      width:30px;
+      float: left;
+      border: 2px solid white;
+      border-radius: 30px;
+    }
+    div.end p {
+      text-align: left;
+      padding-left:50px;
+    }
+    div.end span {
+      color: hsl(215, 51%, 70%);
+    }
+    span.author:hover {
+      color:  hsl(178, 100%, 50%) ;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content-container">
+      
+  <img class="cube" src="images/image-equilibrium.jpg" alt="">
+  <div class="hover-show">
+<img class="eye" src="images/icon-view.svg" alt="">
+  </div>
+  <p class="title"> Equilibrium #3429 </p>
+
+  <p class="description">Our Equilibrium collection promotes balance and calm.</p> 
+  <div class="flex">
+  <p class="left">0.041 ETH</p>
+  <p class="right">3 days left</p>
+</div>
+  <div class="end">
+  <img class="avatar" src="images/image-avatar.png" alt="">
+  <p> <span>Creation of</span> <span class="author">Jules Wyvern</span> </p>
+</div>
+</div>
+</div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

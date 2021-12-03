@@ -1,0 +1,1 @@
+my first practice at frontendmentor. i learned how to align items,line-height,::before(pseudo element) from this practice. :heart:
