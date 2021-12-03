@@ -1,1 +1,1 @@
-my first practice at frontendmentor. i learned how to align items,line-height,::before(pseudo element) from this practice. :heart:
+my first practice at frontendmentor. i learned how to align items,line-height(how to use line-height to put an image in the center),::before(pseudo element) from this practice. :heart:
